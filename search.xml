@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>markdown使用方法</title>
+      <link href="/2025/11/24/%E6%96%B0%E7%AF%87%E7%AB%A0/"/>
+      <url>/2025/11/24/%E6%96%B0%E7%AF%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><blockquote><h1 id="标题一-标题二-标题三-以此类推"><a href="#标题一-标题二-标题三-以此类推" class="headerlink" title="标题一   ## 标题二   ### 标题三  以此类推"></a>标题一   ## 标题二   ### 标题三  以此类推</h1></blockquote><p>‘&gt;’  代表引用</p><h1 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h1><p>把大象放进冰箱：</p><ol><li><p>打开冰箱</p></li><li><p>把大象塞进去</p></li><li><p>关上冰箱</p><blockquote><p>数字后面加点  .</p></blockquote></li></ol><h1 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h1><p>无序列表：</p><ul><li><p>小明</p></li><li><p>小花</p></li><li><p>小心</p></li></ul><blockquote><p>减号后面加中文，是无序列表   -</p></blockquote><h1 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h1><ul><li><p><input disabled="" type="checkbox"> 吃饭</p></li><li><p><input disabled="" type="checkbox"> 睡觉</p></li></ul><blockquote><p>减号后面加括号   -[]</p></blockquote><h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">max</span>(a,b)</span><br></pre></td></tr></table></figure><blockquote><p>三个反引号 加一个编程语言</p></blockquote><h1 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h1><p>$$<br>\frac{a}{b} + \frac{1}{2} &#x3D; \frac{2a + b}{2b}<br>$$</p><blockquote><p>一对dollar符号  ¥¥¥¥</p></blockquote><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th>姓名</th><th>年龄</th><th>成绩</th></tr></thead><tbody><tr><td></td><td></td><td></td></tr></tbody></table><blockquote><p>|a|b|c|</p></blockquote><h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><p>就是这样<a href="%E5%AD%A6%E7%94%9F%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E7%BC%A9%E5%86%99">^stu</a></p><p><img src="/../img/xinpianzhang/1.png" alt="脚注"></p><h1 id="横线"><a href="#横线" class="headerlink" title="横线"></a>横线</h1><p><img src="/../img/xinpianzhang/2.png" alt="jianhao"></p><h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><a href="baidu.com" title="一个搜索引擎">百度</a></p><p><a href="baidu.com" title="一个搜索引擎">百度</a></p><p>请参考<a href="#%E6%A0%87%E9%A2%98%E4%B8%80">标题一呀</a></p><p>​</p><p>URL: </p><p><a href="http://www.baidu.com/">http://www.baidu.com</a> </p><h1 id="行内格式"><a href="#行内格式" class="headerlink" title="行内格式"></a>行内格式</h1><p><em>斜体</em>     <strong>加粗</strong>     <code>行内代码</code>     <u>下划线</u>      :smile:     </p><p>$\frac{a}{b} + \frac{1}{2} &#x3D; \frac{2a + b}{2b}$     H<del>2</del>O      &#x3D;&#x3D;涂颜色&#x3D;&#x3D;</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2025/11/17/hello-world/"/>
+      <url>/2025/11/17/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>代码演示</title>
+      <link href="/2025/11/14/%E4%BB%A3%E7%A0%81%E5%9D%97%E6%BC%94%E7%A4%BA/%E6%BC%94%E7%A4%BA/"/>
+      <url>/2025/11/14/%E4%BB%A3%E7%A0%81%E5%9D%97%E6%BC%94%E7%A4%BA/%E6%BC%94%E7%A4%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="yifasd"><a href="#yifasd" class="headerlink" title="yifasd"></a>yifasd</h2><pre><code>console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;) console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)</code></pre><h3 id="你是"><a href="#你是" class="headerlink" title="你是"></a>你是</h3><pre><code>console.log(&quot;hello world&quot;)    console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)</code></pre><h3 id=""><a href="#" class="headerlink" title=""></a></h3><pre><code> console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)</code></pre><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><pre><code>console.log(&quot;hello world&quot;)    console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;) console.log(&quot;hello world&quot;)</code></pre><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></h3><pre><code>console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)    console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;) console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)console.log(&quot;hello world&quot;)</code></pre><h2 id="-3"><a href="#-3" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
