@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>gesp4速查表 | 山野橘光</title><meta name="author" content="Xin"><meta name="copyright" content="Xin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="GESP C++ 四级备考速查表 一、数据类型   类型 字节 范围 格式符    int 4 -2,147,483,648 ~ 2,147,483,647 %d   long long 8 -9.2×10¹⁸ ~ 9.2×10¹⁸ %lld   float 4 约±3.4×10³⁸ (6-7位有效) %f   double 8 约±1.7×10³⁰⁸ (15位有效) %lf   char 1 -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gesp4速查表">
+<meta property="og:url" content="https://guixin1.github.io/2026/06/07/gesp4%E9%80%9F%E6%9F%A5%E8%A1%A8/index.html">
+<meta property="og:site_name" content="山野橘光">
+<meta property="og:description" content="GESP C++ 四级备考速查表 一、数据类型   类型 字节 范围 格式符    int 4 -2,147,483,648 ~ 2,147,483,647 %d   long long 8 -9.2×10¹⁸ ~ 9.2×10¹⁸ %lld   float 4 约±3.4×10³⁸ (6-7位有效) %f   double 8 约±1.7×10³⁰⁸ (15位有效) %lf   char 1 -">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://guixin1.github.io/img/Unknown.png">
+<meta property="article:published_time" content="2026-06-07T09:58:21.000Z">
+<meta property="article:modified_time" content="2026-06-07T09:58:46.155Z">
+<meta property="article:author" content="Xin">
+<meta property="article:tag" content="哟西">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://guixin1.github.io/img/Unknown.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "gesp4速查表",
+  "url": "https://guixin1.github.io/2026/06/07/gesp4%E9%80%9F%E6%9F%A5%E8%A1%A8/",
+  "image": "https://guixin1.github.io/img/Unknown.png",
+  "datePublished": "2026-06-07T09:58:21.000Z",
+  "dateModified": "2026-06-07T09:58:46.155Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xin",
+      "url": "https://guixin1.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://guixin1.github.io/2026/06/07/gesp4%E9%80%9F%E6%9F%A5%E8%A1%A8/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'gesp4速查表',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div id="web_bg" style="background-image: url(/img/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E4%BE%BF%E5%88%A9%E5%BA%97-%E6%98%A5%E6%97%A5.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/Unknown.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E5%92%96%E5%95%A1%E9%A6%86-%E6%89%8B%E7%BB%98%E9%A3%8E-%E6%8F%92%E7%94%BB.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">山野橘光</span></a><a class="nav-page-title" href="/"><span class="site-name">gesp4速查表</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">gesp4速查表</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-06-07T09:58:21.000Z" title="发表于 2026-06-07 17:58:21">2026-06-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-06-07T09:58:46.155Z" title="更新于 2026-06-07 17:58:46">2026-06-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="GESP-C-四级备考速查表"><a href="#GESP-C-四级备考速查表" class="headerlink" title="GESP C++ 四级备考速查表"></a>GESP C++ 四级备考速查表</h1><hr>
+<h2 id="一、数据类型"><a href="#一、数据类型" class="headerlink" title="一、数据类型"></a>一、数据类型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>字节</th>
+<th>范围</th>
+<th>格式符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>int</code></td>
+<td>4</td>
+<td>-2,147,483,648 ~ 2,147,483,647</td>
+<td>%d</td>
+</tr>
+<tr>
+<td><code>long long</code></td>
+<td>8</td>
+<td>-9.2×10¹⁸ ~ 9.2×10¹⁸</td>
+<td>%lld</td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>4</td>
+<td>约±3.4×10³⁸ (6-7位有效)</td>
+<td>%f</td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td>8</td>
+<td>约±1.7×10³⁰⁸ (15位有效)</td>
+<td>%lf</td>
+</tr>
+<tr>
+<td><code>char</code></td>
+<td>1</td>
+<td>-128 ~ 127</td>
+<td>%c</td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td>1</td>
+<td>true(非0) &#x2F; false(0)</td>
+<td>%d</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="二、常用头文件"><a href="#二、常用头文件" class="headerlink" title="二、常用头文件"></a>二、常用头文件</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span>    <span class="comment">// cin, cout</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span>      <span class="comment">// scanf, printf</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span>      <span class="comment">// string类</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span>       <span class="comment">// 数学函数</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span>   <span class="comment">// sort, max, min, swap</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span>      <span class="comment">// 动态数组</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="三、字符串操作"><a href="#三、字符串操作" class="headerlink" title="三、字符串操作"></a>三、字符串操作</h2><h3 id="string类常用方法"><a href="#string类常用方法" class="headerlink" title="string类常用方法"></a>string类常用方法</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>length()</code> &#x2F; <code>size()</code></td>
+<td>获取长度</td>
+<td><code>s.length()</code></td>
+</tr>
+<tr>
+<td><code>empty()</code></td>
+<td>判空</td>
+<td><code>s.empty()</code></td>
+</tr>
+<tr>
+<td><code>substr(pos, len)</code></td>
+<td>截取子串</td>
+<td><code>s.substr(0, 5)</code></td>
+</tr>
+<tr>
+<td><code>find(str)</code></td>
+<td>查找子串</td>
+<td><code>s.find(&quot;abc&quot;)</code></td>
+</tr>
+<tr>
+<td><code>append()</code> &#x2F; <code>+=</code></td>
+<td>追加</td>
+<td><code>s += &quot;xyz&quot;</code></td>
+</tr>
+<tr>
+<td><code>insert(pos, str)</code></td>
+<td>插入</td>
+<td><code>s.insert(2, &quot;a&quot;)</code></td>
+</tr>
+<tr>
+<td><code>erase(pos, len)</code></td>
+<td>删除</td>
+<td><code>s.erase(1, 3)</code></td>
+</tr>
+<tr>
+<td><code>replace(pos, len, str)</code></td>
+<td>替换</td>
+<td><code>s.replace(0, 2, &quot;xx&quot;)</code></td>
+</tr>
+<tr>
+<td><code>push_back(c)</code></td>
+<td>追加字符</td>
+<td><code>s.push_back(&#39;a&#39;)</code></td>
+</tr>
+<tr>
+<td><code>pop_back()</code></td>
+<td>删除末字符</td>
+<td><code>s.pop_back()</code></td>
+</tr>
+</tbody></table>
+<h3 id="字符处理"><a href="#字符处理" class="headerlink" title="字符处理"></a>字符处理</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>功能</th>
+<th>头文件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>isalpha(c)</code></td>
+<td>是否字母</td>
+<td>cctype</td>
+</tr>
+<tr>
+<td><code>isdigit(c)</code></td>
+<td>是否数字</td>
+<td>cctype</td>
+</tr>
+<tr>
+<td><code>isupper(c)</code></td>
+<td>是否大写</td>
+<td>cctype</td>
+</tr>
+<tr>
+<td><code>islower(c)</code></td>
+<td>是否小写</td>
+<td>cctype</td>
+</tr>
+<tr>
+<td><code>toupper(c)</code></td>
+<td>转大写</td>
+<td>cctype</td>
+</tr>
+<tr>
+<td><code>tolower(c)</code></td>
+<td>转小写</td>
+<td>cctype</td>
+</tr>
+<tr>
+<td><code>isspace(c)</code></td>
+<td>是否空白</td>
+<td>cctype</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="四、数组与指针"><a href="#四、数组与指针" class="headerlink" title="四、数组与指针"></a>四、数组与指针</h2><h3 id="一维数组"><a href="#一维数组" class="headerlink" title="一维数组"></a>一维数组</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[<span class="number">100</span>];           <span class="comment">// 声明</span></span><br><span class="line"><span class="type">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;    <span class="comment">// 初始化</span></span><br><span class="line"><span class="built_in">memset</span>(arr, <span class="number">0</span>, <span class="built_in">sizeof</span>(arr));  <span class="comment">// 清零</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[<span class="number">10</span>][<span class="number">20</span>];        <span class="comment">// 声明</span></span><br><span class="line"><span class="type">int</span> arr[<span class="number">2</span>][<span class="number">3</span>] = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;, &#123;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;&#125;;  <span class="comment">// 初始化</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; j++)</span><br><span class="line">        <span class="comment">// arr[i][j]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="指针操作"><a href="#指针操作" class="headerlink" title="指针操作"></a>指针操作</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> *p = &amp;a;    <span class="comment">// p指向a的地址</span></span><br><span class="line">*p = <span class="number">20</span>;        <span class="comment">// 通过指针修改a的值</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> arr[<span class="number">5</span>] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line"><span class="type">int</span> *p = arr;   <span class="comment">// p指向arr[0]</span></span><br><span class="line">p++;            <span class="comment">// p指向arr[1]</span></span><br><span class="line">*(p<span class="number">+2</span>) = <span class="number">10</span>;    <span class="comment">// arr[3] = 10</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="五、排序算法"><a href="#五、排序算法" class="headerlink" title="五、排序算法"></a>五、排序算法</h2><h3 id="算法对比"><a href="#算法对比" class="headerlink" title="算法对比"></a>算法对比</h3><table>
+<thead>
+<tr>
+<th>算法</th>
+<th>平均时间</th>
+<th>最坏时间</th>
+<th>空间</th>
+<th>稳定性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>冒泡排序</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>O(1)</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td>选择排序</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>O(1)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td>插入排序</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>O(1)</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td>快速排序</td>
+<td>O(nlogn)</td>
+<td>O(n²)</td>
+<td>O(logn)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td>归并排序</td>
+<td>O(nlogn)</td>
+<td>O(nlogn)</td>
+<td>O(n)</td>
+<td>稳定</td>
+</tr>
+</tbody></table>
+<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++)</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n<span class="number">-1</span>-i; j++)</span><br><span class="line">        <span class="keyword">if</span> (arr[j] &gt; arr[j<span class="number">+1</span>])</span><br><span class="line">            <span class="built_in">swap</span>(arr[j], arr[j<span class="number">+1</span>]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++) &#123;</span><br><span class="line">    <span class="type">int</span> minIdx = i;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = i<span class="number">+1</span>; j &lt; n; j++)</span><br><span class="line">        <span class="keyword">if</span> (arr[j] &lt; arr[minIdx])</span><br><span class="line">            minIdx = j;</span><br><span class="line">    <span class="built_in">swap</span>(arr[i], arr[minIdx]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">quickSort</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> left, <span class="type">int</span> right)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (left &gt;= right) <span class="keyword">return</span>;</span><br><span class="line">    <span class="type">int</span> i = left, j = right, pivot = arr[left];</span><br><span class="line">    <span class="keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; j &amp;&amp; arr[j] &gt;= pivot) j--;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; j &amp;&amp; arr[i] &lt;= pivot) i++;</span><br><span class="line">        <span class="keyword">if</span> (i &lt; j) <span class="built_in">swap</span>(arr[i], arr[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">swap</span>(arr[left], arr[i]);</span><br><span class="line">    <span class="built_in">quickSort</span>(arr, left, i<span class="number">-1</span>);</span><br><span class="line">    <span class="built_in">quickSort</span>(arr, i<span class="number">+1</span>, right);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="STL排序"><a href="#STL排序" class="headerlink" title="STL排序"></a>STL排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="built_in">sort</span>(arr, arr + n);                    <span class="comment">// 升序</span></span><br><span class="line"><span class="built_in">sort</span>(arr, arr + n, <span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());   <span class="comment">// 降序</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 自定义比较</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cmp</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a &gt; b; &#125;</span><br><span class="line"><span class="built_in">sort</span>(arr, arr + n, cmp);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="六、递归模板"><a href="#六、递归模板" class="headerlink" title="六、递归模板"></a>六、递归模板</h2><h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">返回类型 函数名(参数) &#123;</span><br><span class="line">    <span class="keyword">if</span> (终止条件) <span class="keyword">return</span> 基准结果;</span><br><span class="line">    <span class="keyword">return</span> 递归表达式;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="阶乘"><a href="#阶乘" class="headerlink" title="阶乘"></a>阶乘</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">factorial</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n &lt;= <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> n * <span class="built_in">factorial</span>(n - <span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="斐波那契"><a href="#斐波那契" class="headerlink" title="斐波那契"></a>斐波那契</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">fib</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n &lt;= <span class="number">1</span>) <span class="keyword">return</span> n;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">fib</span>(n<span class="number">-1</span>) + <span class="built_in">fib</span>(n<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="GCD"><a href="#GCD" class="headerlink" title="GCD"></a>GCD</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> b == <span class="number">0</span> ? a : <span class="built_in">gcd</span>(b, a % b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="七、动态规划模板"><a href="#七、动态规划模板" class="headerlink" title="七、动态规划模板"></a>七、动态规划模板</h2><h3 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h3><ol>
+<li>定义状态 <code>dp[i]</code></li>
+<li>推导状态转移方程</li>
+<li>确定初始条件</li>
+<li>确定计算顺序</li>
+</ol>
+<h3 id="最长上升子序列-LIS"><a href="#最长上升子序列-LIS" class="headerlink" title="最长上升子序列 (LIS)"></a>最长上升子序列 (LIS)</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">lis</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> dp[n], ans = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">fill</span>(dp, dp + n, <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &lt; arr[i])</span><br><span class="line">                dp[i] = <span class="built_in">max</span>(dp[i], dp[j] + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        ans = <span class="built_in">max</span>(ans, dp[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="0-1背包"><a href="#0-1背包" class="headerlink" title="0&#x2F;1背包"></a>0&#x2F;1背包</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">knapsack</span><span class="params">(<span class="type">int</span> W, <span class="type">int</span> wt[], <span class="type">int</span> val[], <span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> dp[W + <span class="number">1</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> w = W; w &gt;= wt[i]; w--) &#123;</span><br><span class="line">            dp[w] = <span class="built_in">max</span>(dp[w], dp[w - wt[i]] + val[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[W];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="八、位运算速查"><a href="#八、位运算速查" class="headerlink" title="八、位运算速查"></a>八、位运算速查</h2><table>
+<thead>
+<tr>
+<th>运算</th>
+<th>符号</th>
+<th>示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>与</td>
+<td><code>&amp;</code></td>
+<td>5 &amp; 3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>或</td>
+<td><code>|</code></td>
+<td>5 | 3</td>
+<td>7</td>
+</tr>
+<tr>
+<td>异或</td>
+<td><code>^</code></td>
+<td>5 ^ 3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>非</td>
+<td><code>~</code></td>
+<td>~5</td>
+<td>-6</td>
+</tr>
+<tr>
+<td>左移</td>
+<td><code>&lt;&lt;</code></td>
+<td>5 &lt;&lt; 2</td>
+<td>20</td>
+</tr>
+<tr>
+<td>右移</td>
+<td><code>&gt;&gt;</code></td>
+<td>5 &gt;&gt; 1</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<h3 id="常用技巧"><a href="#常用技巧" class="headerlink" title="常用技巧"></a>常用技巧</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">n &amp; <span class="number">1</span>          <span class="comment">// 判断奇偶(1为奇)</span></span><br><span class="line">n &amp; (n<span class="number">-1</span>)      <span class="comment">// 判断是否为2的幂(0则是)</span></span><br><span class="line">n ^ n          <span class="comment">// 0</span></span><br><span class="line">n ^ <span class="number">0</span>          <span class="comment">// n</span></span><br><span class="line">a ^ b ^ b      <span class="comment">// a (异或自反性)</span></span><br><span class="line">x &amp; (-x)       <span class="comment">// 取最低位1</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="九、数学公式"><a href="#九、数学公式" class="headerlink" title="九、数学公式"></a>九、数学公式</h2><h3 id="数论"><a href="#数论" class="headerlink" title="数论"></a>数论</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 最大公约数</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> </span>&#123; <span class="keyword">return</span> b ? <span class="built_in">gcd</span>(b, a%b) : a; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 最小公倍数</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">lcm</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a / <span class="built_in">gcd</span>(a,b) * b; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 质数判断</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">isPrime</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n &lt; <span class="number">2</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i * i &lt;= n; i++)</span><br><span class="line">        <span class="keyword">if</span> (n % i == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 快速幂</span></span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">power</span><span class="params">(<span class="type">long</span> <span class="type">long</span> a, <span class="type">long</span> <span class="type">long</span> b, <span class="type">long</span> <span class="type">long</span> mod)</span> </span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (b) &#123;</span><br><span class="line">        <span class="keyword">if</span> (b &amp; <span class="number">1</span>) res = res * a % mod;</span><br><span class="line">        a = a * a % mod;</span><br><span class="line">        b &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 十进制转二进制字符串</span></span><br><span class="line"><span class="function">string <span class="title">toBinary</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    string s = <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">while</span> (n) &#123; s = <span class="built_in">char</span>(<span class="string">&#x27;0&#x27;</span> + n % <span class="number">2</span>) + s; n /= <span class="number">2</span>; &#125;</span><br><span class="line">    <span class="keyword">return</span> s.<span class="built_in">empty</span>() ? <span class="string">&quot;0&quot;</span> : s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 二进制字符串转十进制</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">toDecimal</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">char</span> c : s) n = n * <span class="number">2</span> + (c - <span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">    <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="组合数"><a href="#组合数" class="headerlink" title="组合数"></a>组合数</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// C(n, m) = n! / (m! * (n-m)!)</span></span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">C</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (m &gt; n - m) m = n - m;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; i++)</span><br><span class="line">        res = res * (n - i) / (i + <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="十、常用STL"><a href="#十、常用STL" class="headerlink" title="十、常用STL"></a>十、常用STL</h2><h3 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; v;          <span class="comment">// 声明</span></span><br><span class="line">v.<span class="built_in">push_back</span>(x);         <span class="comment">// 尾插</span></span><br><span class="line">v.<span class="built_in">pop_back</span>();           <span class="comment">// 尾删</span></span><br><span class="line">v.<span class="built_in">size</span>();               <span class="comment">// 大小</span></span><br><span class="line">v.<span class="built_in">empty</span>();              <span class="comment">// 判空</span></span><br><span class="line">v.<span class="built_in">clear</span>();              <span class="comment">// 清空</span></span><br><span class="line">v[i] / v.<span class="built_in">at</span>(i);         <span class="comment">// 访问</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="pair"><a href="#pair" class="headerlink" title="pair"></a>pair</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pair&lt;<span class="type">int</span>, string&gt; p;</span><br><span class="line">p.first;    <span class="comment">// 第一个元素</span></span><br><span class="line">p.second;   <span class="comment">// 第二个元素</span></span><br><span class="line"><span class="built_in">make_pair</span>(a, b);  <span class="comment">// 创建pair</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="algorithm"><a href="#algorithm" class="headerlink" title="algorithm"></a>algorithm</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(begin, end);           <span class="comment">// 排序</span></span><br><span class="line"><span class="built_in">reverse</span>(begin, end);        <span class="comment">// 反转</span></span><br><span class="line"><span class="built_in">max</span>(a, b);                  <span class="comment">// 最大值</span></span><br><span class="line"><span class="built_in">min</span>(a, b);                  <span class="comment">// 最小值</span></span><br><span class="line"><span class="built_in">swap</span>(a, b);                 <span class="comment">// 交换</span></span><br><span class="line"><span class="built_in">abs</span>(x);                     <span class="comment">// 绝对值</span></span><br><span class="line">*<span class="built_in">max_element</span>(begin, end);   <span class="comment">// 最大元素</span></span><br><span class="line">*<span class="built_in">min_element</span>(begin, end);   <span class="comment">// 最小元素</span></span><br><span class="line"><span class="built_in">lower_bound</span>(begin, end, x); <span class="comment">// 第一个&gt;=x的位置</span></span><br><span class="line"><span class="built_in">upper_bound</span>(begin, end, x); <span class="comment">// 第一个&gt;x的位置</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="十一、输入输出"><a href="#十一、输入输出" class="headerlink" title="十一、输入输出"></a>十一、输入输出</h2><h3 id="cin-cout"><a href="#cin-cout" class="headerlink" title="cin&#x2F;cout"></a>cin&#x2F;cout</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> n;</span><br><span class="line">cin &gt;&gt; n;</span><br><span class="line">cout &lt;&lt; n &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 加速</span></span><br><span class="line">ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="scanf-printf"><a href="#scanf-printf" class="headerlink" title="scanf&#x2F;printf"></a>scanf&#x2F;printf</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, n);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 格式符</span></span><br><span class="line"><span class="comment">// %d - int</span></span><br><span class="line"><span class="comment">// %lld - long long</span></span><br><span class="line"><span class="comment">// %f - float</span></span><br><span class="line"><span class="comment">// %lf - double</span></span><br><span class="line"><span class="comment">// %c - char</span></span><br><span class="line"><span class="comment">// %s - 字符串</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="文件重定向"><a href="#文件重定向" class="headerlink" title="文件重定向"></a>文件重定向</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">freopen</span>(<span class="string">&quot;input.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line"><span class="built_in">freopen</span>(<span class="string">&quot;output.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="十二、常见错误"><a href="#十二、常见错误" class="headerlink" title="十二、常见错误"></a>十二、常见错误</h2><table>
+<thead>
+<tr>
+<th>错误</th>
+<th>原因</th>
+<th>解决</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数组越界</td>
+<td>下标超出范围</td>
+<td>检查边界条件</td>
+</tr>
+<tr>
+<td>整数溢出</td>
+<td>int范围不足</td>
+<td>使用long long</td>
+</tr>
+<tr>
+<td>无限循环</td>
+<td>循环条件错误</td>
+<td>检查终止条件</td>
+</tr>
+<tr>
+<td>递归栈溢出</td>
+<td>递归太深</td>
+<td>改用迭代&#x2F;记忆化</td>
+</tr>
+<tr>
+<td>空指针</td>
+<td>指针未初始化</td>
+<td>检查指针赋值</td>
+</tr>
+<tr>
+<td>精度问题</td>
+<td>浮点数比较</td>
+<td>使用eps容差</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="十三、调试技巧"><a href="#十三、调试技巧" class="headerlink" title="十三、调试技巧"></a>十三、调试技巧</h2><h3 id="输出调试"><a href="#输出调试" class="headerlink" title="输出调试"></a>输出调试</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> debug(x) cout &lt;&lt; #x &lt;&lt; <span class="string">&quot; = &quot;</span> &lt;&lt; x &lt;&lt; endl</span></span><br><span class="line"><span class="comment">// 使用: debug(arr[i]);</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常见检查"><a href="#常见检查" class="headerlink" title="常见检查"></a>常见检查</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 检查数组范围</span></span><br><span class="line"><span class="built_in">assert</span>(i &gt;= <span class="number">0</span> &amp;&amp; i &lt; n);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 检查指针</span></span><br><span class="line"><span class="keyword">if</span> (ptr == <span class="literal">nullptr</span>) &#123; <span class="comment">/* 处理 */</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="边界测试"><a href="#边界测试" class="headerlink" title="边界测试"></a>边界测试</h3><ul>
+<li>空输入 (n&#x3D;0)</li>
+<li>最小输入 (n&#x3D;1)</li>
+<li>最大输入 (n&#x3D;最大值)</li>
+<li>特殊情况 (全相同、有序、逆序)</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://guixin1.github.io">Xin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://guixin1.github.io/2026/06/07/gesp4%E9%80%9F%E6%9F%A5%E8%A1%A8/">https://guixin1.github.io/2026/06/07/gesp4%E9%80%9F%E6%9F%A5%E8%A1%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://guixin1.github.io" target="_blank">山野橘光</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/Unknown.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/06/07/gesp4/" title="gesp4"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">gesp4</div></div><div class="info-2"><div class="info-item-1">GESP C++ 四级知识点练习题本文档提供各知识点的典型练习题，帮助巩固理解  一、指针专题练习1：指针基础12345678910111213#include &lt;iostream&gt;using namespace std;int main() &#123;    int a = 10;    int *p = &amp;a;    cout &lt;&lt; *p &lt;&lt; endl;  // 输出什么？        *p = 20;    cout &lt;&lt; a &lt;&lt; endl;   // 输出什么？        return 0;&#125; 答案：10, 20解析：p指向a的地址，p解引用获取a的值，修改p等于修改a 练习2：指针与数组12345678910111213#include &lt;iostream&gt;using namespace std;int main() &#123;    int arr[] = &#123;1, 2, 3, 4, 5&#125;;    int *p = arr;        cout...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GESP-C-%E5%9B%9B%E7%BA%A7%E5%A4%87%E8%80%83%E9%80%9F%E6%9F%A5%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">GESP C++ 四级备考速查表</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">一、数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%B8%B8%E7%94%A8%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.</span> <span class="toc-text">二、常用头文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="toc-number">1.3.</span> <span class="toc-text">三、字符串操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#string%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.1.</span> <span class="toc-text">string类常用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E5%A4%84%E7%90%86"><span class="toc-number">1.3.2.</span> <span class="toc-text">字符处理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88"><span class="toc-number">1.4.</span> <span class="toc-text">四、数组与指针</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.1.</span> <span class="toc-text">一维数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.2.</span> <span class="toc-text">二维数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E9%92%88%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.3.</span> <span class="toc-text">指针操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95"><span class="toc-number">1.5.</span> <span class="toc-text">五、排序算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%AF%B9%E6%AF%94"><span class="toc-number">1.5.1.</span> <span class="toc-text">算法对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="toc-number">1.5.2.</span> <span class="toc-text">冒泡排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="toc-number">1.5.3.</span> <span class="toc-text">选择排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="toc-number">1.5.4.</span> <span class="toc-text">快速排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#STL%E6%8E%92%E5%BA%8F"><span class="toc-number">1.5.5.</span> <span class="toc-text">STL排序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E9%80%92%E5%BD%92%E6%A8%A1%E6%9D%BF"><span class="toc-number">1.6.</span> <span class="toc-text">六、递归模板</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">1.6.1.</span> <span class="toc-text">基本结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B6%E4%B9%98"><span class="toc-number">1.6.2.</span> <span class="toc-text">阶乘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91"><span class="toc-number">1.6.3.</span> <span class="toc-text">斐波那契</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GCD"><span class="toc-number">1.6.4.</span> <span class="toc-text">GCD</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%A8%A1%E6%9D%BF"><span class="toc-number">1.7.</span> <span class="toc-text">七、动态规划模板</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.7.1.</span> <span class="toc-text">基本步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97-LIS"><span class="toc-number">1.7.2.</span> <span class="toc-text">最长上升子序列 (LIS)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-1%E8%83%8C%E5%8C%85"><span class="toc-number">1.7.3.</span> <span class="toc-text">0&#x2F;1背包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E4%BD%8D%E8%BF%90%E7%AE%97%E9%80%9F%E6%9F%A5"><span class="toc-number">1.8.</span> <span class="toc-text">八、位运算速查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-number">1.8.1.</span> <span class="toc-text">常用技巧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">1.9.</span> <span class="toc-text">九、数学公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E8%AE%BA"><span class="toc-number">1.9.1.</span> <span class="toc-text">数论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.9.2.</span> <span class="toc-text">进制转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E6%95%B0"><span class="toc-number">1.9.3.</span> <span class="toc-text">组合数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E3%80%81%E5%B8%B8%E7%94%A8STL"><span class="toc-number">1.10.</span> <span class="toc-text">十、常用STL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vector"><span class="toc-number">1.10.1.</span> <span class="toc-text">vector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pair"><span class="toc-number">1.10.2.</span> <span class="toc-text">pair</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#algorithm"><span class="toc-number">1.10.3.</span> <span class="toc-text">algorithm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="toc-number">1.11.</span> <span class="toc-text">十一、输入输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cin-cout"><span class="toc-number">1.11.1.</span> <span class="toc-text">cin&#x2F;cout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scanf-printf"><span class="toc-number">1.11.2.</span> <span class="toc-text">scanf&#x2F;printf</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">1.11.3.</span> <span class="toc-text">文件重定向</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%BA%8C%E3%80%81%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF"><span class="toc-number">1.12.</span> <span class="toc-text">十二、常见错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%89%E3%80%81%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7"><span class="toc-number">1.13.</span> <span class="toc-text">十三、调试技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E8%B0%83%E8%AF%95"><span class="toc-number">1.13.1.</span> <span class="toc-text">输出调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E6%A3%80%E6%9F%A5"><span class="toc-number">1.13.2.</span> <span class="toc-text">常见检查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%B9%E7%95%8C%E6%B5%8B%E8%AF%95"><span class="toc-number">1.13.3.</span> <span class="toc-text">边界测试</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Xin</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><div class="js-pjax"></div><script async data-pjax src="/"></script></div></body></html>
